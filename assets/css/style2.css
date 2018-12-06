@@ -1,0 +1,142 @@
+body{
+    background-image: url(../images/qbkls.png)
+}
+
+header{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 5%;
+    padding: 5pts;
+    clear: both;
+    display: inline-block;
+    border-bottom: 2px solid #dddddd;
+}
+
+h1{
+    background-color: #4aaaa5;
+    color: white;
+    width: 25%;
+    display:inline-block;
+    margin: 0;
+    height: 40.95px;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 21pt;
+}
+
+.wrapper{
+    /* position:absolute;
+    left: 25%;
+    top: 30%; */
+   margin:0 auto;
+}
+
+#content{
+    width: 960px;
+    margin: 150px auto 0px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    height: 420pt;
+}
+
+#form{
+    width: 960px;
+}
+
+h2{
+    color: #4aaaa5;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    margin-left:10pt;
+    margin-right: 10pt;
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+
+footer{
+   position:absolute;
+   bottom:0;
+   left:0;
+   width:100%;
+   height:50px;
+   background-color: #666666;
+   color:white;
+   text-align: center;
+   border-top: solid 5px #4aaaa5;
+   font-family: Georgia, Times, Times New Roman, serif;
+}
+
+a:hover{
+    background-color: #4aaaa5;
+}
+
+.navLinks{
+    float:right;
+    height: 40.95px;
+    font-size: 12pt;
+    word-spacing: 4pt;
+    line-height: 2;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.navWrapper{
+    width:960px;
+    margin: 0 auto;
+}
+
+.overlay{
+    position: relative;
+    
+}
+#picture1{
+    /* position: relative;
+    left:10pt; */
+    float:left;
+    margin: 10pt;
+}
+
+#picture2{
+    /* position: relative;
+    left:10pt; */
+    float: left;
+    margin: 10pt;
+}
+
+#picture3{
+    /* position: relative;
+    left: 250pt;
+    bottom: 333.8pt; */
+    float:left;
+    margin: 10pt;
+}
+
+#picture4{
+    /* position: relative;
+    left: 250pt;
+    bottom:332pt; */
+    float:left;
+    margin: 10pt;
+}
+
+#picture5{
+    /* position: relative;
+    bottom: 300pt;
+    left: 10pt; */
+    float:left;
+    margin: 10pt;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.overlay{
+    background-color: #4aaaa5;
+    z-index: 2;
+    bottom: 50pt;
+    padding: 10pt;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    color:white;
+}
