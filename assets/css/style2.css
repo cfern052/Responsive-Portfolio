@@ -15,6 +15,7 @@ header{
     clear: both;
     display: inline-block;
     border-bottom: 2px solid #dddddd;
+    z-index: 5;
 }
 
 h1{
@@ -69,6 +70,7 @@ footer{
    text-align: center;
    border-top: solid 5px #4aaaa5;
    font-family: Georgia, Times, Times New Roman, serif;
+   z-index: 5;
 }
 
 a:hover{
@@ -87,11 +89,6 @@ a:hover{
 .navWrapper{
     width:960px;
     margin: 0 auto;
-}
-
-.overlay{
-    position: relative;
-    
 }
 
 #picture1{
@@ -147,6 +144,7 @@ a:hover{
     margin-left:10%;
     margin-right:10%;
     padding: 10pt;
+    position: relative;
 }
 
 .picdiv{
