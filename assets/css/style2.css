@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
-}
-body{
+ }
+ body{
     background-image: url(../images/qbkls.png)
-}
-
-header{
+ }
+ 
+ header{
     background-color: #ffffff;
     position: fixed;
     top: 0;
@@ -16,9 +16,9 @@ header{
     display: inline-block;
     border-bottom: 2px solid #dddddd;
     z-index: 5;
-}
-
-h1{
+ }
+ 
+ h1{
     background-color: #4aaaa5;
     color: white;
     width: 25%;
@@ -27,39 +27,52 @@ h1{
     height: 40.95px;
     font-family: Georgia, Times, Times New Roman, serif;
     font-size: 21pt;
-}
-
-.wrapper{
-    /* position:absolute;
-    left: 25%;
-    top: 30%; */
-   margin:0 auto;
-}
-
-#content{
+ }
+ 
+ .wrapper {
+    height: auto !important;
+  
+    /* Box-model */
+    min-height: 100%;
+  
+    /* Positioning */
+    margin: 0 auto -100px;
+ }
+ 
+ .container {
+    /* Box-model */
     width: 100%;
-    max-width: 650px;
-    margin: 150px auto;
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    float:left;
-}
-
-#form{
+    max-width: 960px;
+    margin: 0px auto;
+    clear: both;
+  }
+ 
+ #content{
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 5%;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+ }
+ 
+ #form{
     width: 960px;
-}
-
-h2{
+ }
+ 
+ h2{
     color: #4aaaa5;
     border-bottom-style: solid;
     border-bottom-color: grey;
     margin-left:10pt;
     margin-right: 10pt;
     font-family: Georgia, Times, Times New Roman, serif;
-}
-
-
-footer{
+ }
+ 
+ 
+ footer{
    position:fixed;
    bottom:0;
    left:0;
@@ -71,69 +84,28 @@ footer{
    border-top: solid 5px #4aaaa5;
    font-family: Georgia, Times, Times New Roman, serif;
    z-index: 5;
-}
-
-a:hover{
+ }
+ 
+ a:hover{
     background-color: #4aaaa5;
-}
-
-.navLinks{
+ }
+ 
+ .navLinks{
     float:right;
     height: 40.95px;
     font-size: 12pt;
     word-spacing: 4pt;
     line-height: 2;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-.navWrapper{
+ }
+ 
+ .navWrapper{
     width:960px;
     margin: 0 auto;
-}
-
-#picture1{
-    /* position: relative;
-    left:10pt; */
-    float:left;
-    /* margin: 10pt; */
-}
-
-#picture2{
-    /* position: relative;
-    left:10pt; */
-    float: left;
-    /* margin: 10pt; */
-}
-
-#picture3{
-    /* position: relative;
-    left: 250pt;
-    bottom: 333.8pt; */
-    float:left;
-    /* margin: 10pt; */
-}
-
-#picture4{
-    /* position: relative;
-    left: 250pt;
-    bottom:332pt; */
-    float:left;
-    /* margin: 10pt; */
-}
-
-#picture5{
-    /* position: relative;
-    bottom: 300pt;
-    left: 10pt; */
-    float:left;
-    /* margin: 10pt; */
-}
-
-.clearfix{
-    clear:both;
-}
-
-.overlay{
+ }
+ 
+ 
+ .overlay{
     background-color: #4aaaa5;
     z-index: 2;
     bottom: 50pt;
@@ -145,23 +117,32 @@ a:hover{
     margin-right:10%;
     padding: 10pt;
     position: relative;
-}
-
-.picdiv{
-    position: relative;
-    width:250px;
-    overflow: auto;
-    margin-right: 10px;
-}
-
-.picture{
-    width:80%;
-    /* margin-left:10%;
-    margin-right:10%; */
-}
-
-
-@media screen and(max-width: 980px){
+ }
+ 
+ .picdiv{
+  /* Positioning */
+  position: relative;
+  float: left;
+ 
+  /* Box-model */
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+ }
+ 
+ .picture{
+   /* Box-model */
+   width: 100%;
+ 
+   /* Visual */
+   border: 0 none;
+    margin-left: 10px;
+   /* Misc */
+   opacity: 0.8;
+ }
+ 
+ 
+ @media screen and(max-width: 980px){
     #content {width:100%;
         margin:auto;
     }
@@ -174,32 +155,32 @@ a:hover{
         width:100%;
         display:block;
     }
-
+ 
     .navWrapper{
         position:fixed;
         width:100%;
-
+ 
     }
     
     h1{
        display:block;
         width:auto;
     }
-
+ 
     /* #container{
         float:none;
         width:auto;
     } */
-   
-
+  
+ 
     body{
         padding:0px;
         margin:0;
     }
     
   }
-
-@media screen and(max-width: 768px){
+ 
+ @media screen and(max-width: 768px){
     #content {width:100%;
         margin:auto;
     }
@@ -211,60 +192,54 @@ a:hover{
         left: 0;
         width:auto;
     }
-
+ 
     .navWrapper{
         position:fixed;
         width:100%;
-
+ 
     }
     
     h1{
-       
+      
         width:auto;
     }
   
-
+ 
     body{
         padding:0px;
         margin:0px;
     }
     
   }
-
-@media only screen and (max-width: 600px) {
+ 
+ @media only screen and (max-width: 600px) {
     #content {
         width:100%;
         
     }
     
-
+ 
     #footer{
         position: fixed;
         bottom: 0;
         left: 0;
         width:100%;
     }
-
+ 
     .navWrapper{
         
         width:100%;
-
+ 
     }
     
     h1{
         width:auto;
     }
-
-
-
+ 
+ 
+ 
     body{
         padding:0px;
         margin:0px;
     }
-
-   
-        
-
-
-  }
-
+}
